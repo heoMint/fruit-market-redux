@@ -1,7 +1,7 @@
 import { ENQUEUE_NOTIFICATION, DEQUEUE_NOTIFICATION } from "../actions/index";
 import { initialState } from "./initialState";
 
-const notificationReducer = (state = initialState, action) => {
+const notificationReducer = (state = {notifications:[]}, action) => {
 
   switch (action.type) {
     case ENQUEUE_NOTIFICATION:

@@ -63,8 +63,5 @@ export const initialState =
       "itemId": 2,
       "quantity": 3
     }
-  ],
-  "notifications": [
-
   ]
 }

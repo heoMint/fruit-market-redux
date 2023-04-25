@@ -20,12 +20,21 @@ export const addToCart = (itemId) => {
 export const removeFromCart = (itemId) => {
   return {
     //TODO
+    type: REMOVE_FROM_CART,
+    payload: {
+      itemId
+    }
   }
 }
 
 export const setQuantity = (itemId, quantity) => {
   return {
     //TODO
+    type: SET_QUANTITY,
+    payload: {
+      quantity,
+      itemId
+    }
   }
 }
 

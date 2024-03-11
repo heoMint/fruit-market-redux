@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Nav from './components/Nav';
 import ItemListContainer from './pages/ItemListContainer';
 import NotificationCenter from './components/NotificationCenter';
@@ -17,8 +17,7 @@ function App() {
       </Routes>
       <NotificationCenter />
       <img
-        id="logo_foot"
-        src={`${process.env.PUBLIC_URL}/codestates-logo.png`}
+        src= '../public/images/cart-icon.png'
         alt="logo_foot"
       />
     </Router>

@@ -1,5 +1,5 @@
 import { ENQUEUE_NOTIFICATION, DEQUEUE_NOTIFICATION } from "../actions/index";
-import { initialState } from "./initialState";
+
 
 const notificationReducer = (state = {notifications:[]}, action) => {
 

@@ -30,13 +30,11 @@ export default function ShoppingCart() {
   };
 
   const handleQuantityChange = (quantity, itemId) => {
-    //TODO: dispatch 함수를 호출하여 액션을 전달하세요.
     dispatch(setQuantity(itemId,quantity))
   }
 
   const handleDelete = (itemId) => {
     setCheckedItems(checkedItems.filter((el) => el !== itemId))
-    //TODO: dispatch 함수를 호출하여 액션을 전달하세요.
     dispatch(removeFromCart(itemId))
   }
 
@@ -73,7 +71,7 @@ export default function ShoppingCart() {
             }
             onChange={(e) => handleAllCheck(e.target.checked)} >
           </input>
-          <label >전체선택</label>
+          <label className='cart-label'>전체선택</label>
         </span>
         <div id="shopping-cart-container">
           {!cartItems.length ? (
